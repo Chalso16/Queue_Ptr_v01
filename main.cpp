@@ -3,7 +3,7 @@
 #include "Queue.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "Hello, World!\n" << std::endl;
 
 
     Queue cola;
@@ -12,11 +12,16 @@ int main() {
         cola.push(i);
     }
     cola.empty();
-    cout << "cola.front= " << cola.front()<<endl;
+    cout << "\ncola.front= " << cola.front()<<endl;
     cout << "cola.back= "<<cola.back()<<endl;
     cola.print();
+    cout << "La cola (Queue) tiene size: "<< cola.size()<<endl;
+    cout << endl;
 
-    cola.pop();
+    cout << "Elemento eliminado de la cola = " <<cola.pop()<<endl;
+
+    cout << "\ncola.front= " << cola.front()<<endl;
+    cout << "cola.back= "<<cola.back()<<endl;
     cola.print();
     cout << "La cola (Queue) tiene size: "<< cola.size()<<endl;
     return 0;

@@ -49,7 +49,7 @@ int Queue::back() {
 }
 
 int Queue::pop() {
-    if (empty()) {
+    if (ptr_Front==nullptr) {
         return -1;
     }
     const int i = ptr_Front->value;
